@@ -1,0 +1,10 @@
+version: '3'
+services:
+  admin:
+    image: registry.gitlab.com/codemonx/mens-shop/admin:stage
+    networks:
+      default:
+        aliases:
+          - mens-shop-admin
+    expose:
+      - 80
